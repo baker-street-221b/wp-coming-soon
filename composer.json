@@ -1,0 +1,14 @@
+{
+  "name": "bakerstreet/bakerstreet-coming-soon",
+  "description": "Coming Soon / Wartungsmodus Plugin (Baker Street)",
+  "type": "wordpress-plugin",
+  "license": "proprietary",
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "BakerStreet\\ComingSoon\\": "src/"
+    }
+  }
+}
