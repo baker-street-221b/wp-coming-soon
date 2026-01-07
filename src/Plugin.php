@@ -129,14 +129,14 @@ final class Plugin {
             "}\n\n" .
             "// Try to bootstrap WordPress so options can be read (works for Bedrock + Classic).\n" .
             "if (!function_exists('get_option')) {\n" .
-            "  $candidates = [\n" .
+            "  \$candidates = [\n" .
             "    __DIR__ . '/../wp-load.php',\n" .
             "    __DIR__ . '/../wp/wp-load.php',\n" .
             "    __DIR__ . '/../wordpress/wp-load.php',\n" .
             "  ];\n" .
-            "  foreach ($candidates as $file) {\n" .
-            "    if (is_string($file) && file_exists($file)) {\n" .
-            "      require_once $file;\n" .
+            "  foreach (\$candidates as \$file) {\n" .
+            "    if (is_string(\$file) && file_exists(\$file)) {\n" .
+            "      require_once \$file;\n" .
             "      break;\n" .
             "    }\n" .
             "  }\n" .
