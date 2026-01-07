@@ -11,17 +11,17 @@ $option_key = 'bs_coming_soon_options';
 $defaults = [
   'headline' => 'Website im Umbau',
   'subline' => "Unsere Website wird heute für einen kurzen Zeitraum umgestellt.\nWährenddessen sind wir selbstverständlich weiterhin per E-Mail oder Telefon für Sie erreichbar.",
-  'phone_label' => '044 362 84 84',
-  'phone_href'  => '0443628484',
-  'email' => 'ief@ief-zh.ch',
+  'phone_label' => '044 XXX XX XX',
+  'phone_href'  => '044XXXXXXX',
+  'email' => 'support@baker-street.ch',
 
   'logo_url' => '',
-  'brand_text' => 'IEF',
-  'brand_tagline' => "Institut für systemische Entwicklung\nund Fortbildung",
-  'bg_color' => '#FFEA3D',
+  'brand_text' => 'Name',
+  'brand_tagline' => "Subline",
+  'bg_color' => '#FAFAFA',
   'text_color' => '#2B2B2B',
   'card_bg' => '#FFFFFF',
-  'font_family' => 'Whitney, sans-serif',
+  'font_family' => 'Open Sans, sans-serif',
   'max_width' => 720,
 ];
 
