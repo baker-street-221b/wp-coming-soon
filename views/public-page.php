@@ -195,8 +195,8 @@ if ($max_width > 1600) $max_width = 1600;
 
     @media (max-width: 520px) {
       .bs-wrap { padding: 28px 14px; gap: 22px; }
-      .bs-card { padding: 28px 22px; border-radius: 18px; }
-      .bs-h1 { font-size: 34px; }
+      .bs-card { padding: 32px; border-radius: 18px; }
+      .bs-h1 { font-size: 24px; }
       .bs-p { font-size: 16px; }
       .bs-contact { font-size: 16px; margin-top: 22px; }
     }
