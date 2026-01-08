@@ -145,9 +145,10 @@ final class Plugin {
             "if (function_exists('status_header')) { status_header(503); }\n\n" .
             "require __DIR__ . '/public-page.php';\n";
 
-        // 3) index.html fallback (no PHP execution) – uses defaults, still noindex
-        $indexHtml = "<!doctype html><html lang=\"de\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><meta name=\"robots\" content=\"noindex,nofollow,noarchive\"><title>Wartungsmodus</title></head><body>Wartungsmodus</body></html>";
-
+        if (file_exists($dir . 'index.html')) {
+            @unlink($dir . 'index.html');
+        }
+        
         $writeOk = true;
         $writeOk = $writeOk && @file_put_contents($dir . 'public-page.php', $tpl) !== false;
         $writeOk = $writeOk && @file_put_contents($dir . 'index.php', $indexPhp) !== false;
